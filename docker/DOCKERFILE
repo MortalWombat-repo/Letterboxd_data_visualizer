@@ -1,0 +1,43 @@
+FROM mageai/mageai:latest
+
+# Install Terraform
+ARG TERRAFORM_VERSION=1.0.0
+RUN wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
+    unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
+    mv terraform /usr/local/bin/ && \
+    rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+# Set the working directory for Terraform
+ARG TERRAFORM_WORKDIR=/terraform
+WORKDIR ${TERRAFORM_WORKDIR}
+
+# Copy Terraform configuration into the container
+COPY . ${TERRAFORM_WORKDIR}
+
+# Copy Google Cloud credentials file for Cloud storage and BigQuery
+COPY keys/personal-gcp.json /home/src/personal-gcp.json
+
+# Copy Kaggle credentials file to be able to download the dataset with Mage
+COPY keys/personal-kaggle.json /home/src/personal-kaggle.json
+
+# Install dbt
+RUN pip3 install dbt
+
+# Install Kaggle API
+RUN pip3 install kaggle
+
+# Clean up
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Copy entrypoint script
+COPY entrypoint.sh /terraform/entrypoint.sh
+
+# Set entrypoint script as executable
+RUN chmod +x /terraform/entrypoint.sh
+
+# Entry point for running Terraform commands
+ENTRYPOINT ["/bin/bash", "/terraform/entrypoint.sh"]
+
+# Default command
+CMD ["--version"]
