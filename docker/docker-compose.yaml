@@ -10,6 +10,7 @@ services:
       dockerfile: Dockerfile
     environment:
       USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      METADATA_PATH=${METADATA_PATH}
       # PostgreSQL environment variables are removed
     ports:
       - 6789:6789
