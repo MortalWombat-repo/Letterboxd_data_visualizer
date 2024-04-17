@@ -52,6 +52,9 @@ Click the Add key drop-down menu, then select Create new key.
 Select JSON as the Key type and click Create.
 Clicking Create downloads a service account key file. After you download the key file, you cannot download it again.
 
+## Dashboard
+![image](https://github.com/MortalWombat-repo/Letterboxd_data_visualizer/assets/69204832/177573a0-1f0f-44df-9430-d9df620e25eb)
+
 ## Note:
 This was a very frustrating project and ultimatively I need to do it again with a different dataset as I had many different tables I planned the project around but did not understand the consequences of Nan values.
 I counted it too late to find out that maybe 10% of rows had entire rows unaffected.
@@ -59,3 +62,4 @@ I thought about downloading many datasets and substituting values on this datase
 Had I done that and substituted values I would negate the point of bigquery and i sure wouldn't look good for me wasting the most expensive resource in this project like that.
 
 Who ever takes a deeper dive into it. I'm very sorry many ad-hoc were made and i continue to make this a bit more manageble.
+
