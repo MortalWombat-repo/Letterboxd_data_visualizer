@@ -15,10 +15,10 @@ WORKDIR ${TERRAFORM_WORKDIR}
 COPY . ${TERRAFORM_WORKDIR}
 
 # Copy Google Cloud credentials file for Cloud storage and BigQuery
-COPY keys/personal-gcp.json /home/src/personal-gcp.json
+COPY keys/gcp.json /home/src/keys/gcp.json
 
 # Copy Kaggle credentials file to be able to download the dataset with Mage
-COPY keys/personal-kaggle.json /home/src/personal-kaggle.json
+COPY keys/kaggle.json /home/src/keys/kaggle.json
 
 # Install dbt
 RUN pip3 install dbt
