@@ -14,6 +14,6 @@ services:
     ports:
       - 6789:6789
     volumes:
-      - .:/home/src/
+      - ./mage:/home/src:rw
       - ./keys:/home/src/keys
     restart: on-failure:5
