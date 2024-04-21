@@ -78,17 +78,6 @@ Letterboxd_data_visualizer/
 │   │   ├── data_loaders
 │   │   │   ├── choose_kaggle_project.py
 │   │   │   └── lad_movies_from_gcsbucket.py
-│   │   ├── mage
-│   │   │   ├── data_exporters
-│   │   │   │   ├── data_to_bigquery.py
-│   │   │   │   ├── kaggle_tobucket.py
-│   │   │   │   └── movies_to_bigquery.py
-│   │   │   ├── data_loaders
-│   │   │   │   ├── choose_kaggle_project.py
-│   │   │   │   └── lad_movies_from_gcsbucket.py
-│   │   │   └── pipelines
-│   │   │       └── letterboxd
-│   │   │           └── metadata.yaml
 │   │   ├── pipelines
 │   │   │   └── letterboxd
 │   │   │       └── metadata.yaml
