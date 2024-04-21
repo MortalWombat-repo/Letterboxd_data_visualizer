@@ -10,9 +10,9 @@ services:
       dockerfile: Dockerfile
     environment:
       USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      ENV: ${ENV}
     ports:
       - 6789:6789
     volumes:
-      - ./mage/letterboxd:/home/src/
-     # - ./keys/:/home/src/keys/
+      - .:/home/src/
     restart: on-failure:5
