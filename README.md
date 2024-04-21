@@ -57,7 +57,7 @@ Clicking Create downloads a service account key file. After you download the key
 
 ## Tree
 
-bash```
+```bash
 Letterboxd_data_visualizer/
 ├── LICENSE
 ├── README.md
