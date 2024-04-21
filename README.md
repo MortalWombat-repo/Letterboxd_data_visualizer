@@ -56,8 +56,8 @@ Clicking Create downloads a service account key file. After you download the key
 ![image](https://github.com/MortalWombat-repo/Letterboxd_data_visualizer/assets/69204832/177573a0-1f0f-44df-9430-d9df620e25eb)
 
 ## Tree
-bash
-```
+
+bash```
 Letterboxd_data_visualizer/
 ├── LICENSE
 ├── README.md
