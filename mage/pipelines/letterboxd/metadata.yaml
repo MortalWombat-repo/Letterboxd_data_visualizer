@@ -131,5 +131,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: letterboxd
-variables_dir: /home/src/mage_data/magic-zoomcamp
+variables_dir: /home/src/mage_data/letterboxd
 widgets: []
