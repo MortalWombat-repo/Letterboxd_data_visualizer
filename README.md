@@ -56,8 +56,8 @@ Clicking Create downloads a service account key file. After you download the key
 ![image](https://github.com/MortalWombat-repo/Letterboxd_data_visualizer/assets/69204832/177573a0-1f0f-44df-9430-d9df620e25eb)
 
 ## Tree
-bash
-'''
+
+bash```
 Letterboxd_data_visualizer/
 ├── LICENSE
 ├── README.md
@@ -100,7 +100,7 @@ Letterboxd_data_visualizer/
     ├── entrypoint.sh
     ├── main.tf
     └── variables.tf
-'''
+```
 
 ## Note:
 This was a very frustrating project and ultimatively I need to do it again with a different dataset as I had many different tables I planned the project around but did not understand the consequences of Nan values.
