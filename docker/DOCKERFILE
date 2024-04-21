@@ -11,7 +11,7 @@ RUN wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform
 ARG TERRAFORM_WORKDIR=/terraform
 WORKDIR ${TERRAFORM_WORKDIR}
 
-COPY ./mage /home/src
+#COPY ./mage /home/src
 
 # Copy Terraform configuration into the container
 COPY . ${TERRAFORM_WORKDIR}
