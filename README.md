@@ -55,6 +55,50 @@ Clicking Create downloads a service account key file. After you download the key
 ## Dashboard
 ![image](https://github.com/MortalWombat-repo/Letterboxd_data_visualizer/assets/69204832/177573a0-1f0f-44df-9430-d9df620e25eb)
 
+## Tree
+Letterboxd_data_visualizer/
+├── LICENSE
+├── README.md
+├── dbt
+│   └── dbt_readme
+├── docker
+│   ├── DOCKERFILE
+│   └── docker-compose.yaml
+├── keys
+│   └── INSTRUCTION.MD
+├── mage
+│   ├── DOCKERFILE
+│   ├── docker-compose.yml
+│   ├── letterboxd
+│   │   ├── data_exporters
+│   │   │   ├── kaggle_tobucket.py
+│   │   │   └── movies_to_bigquery.py
+│   │   ├── data_loaders
+│   │   │   ├── choose_kaggle_project.py
+│   │   │   └── lad_movies_from_gcsbucket.py
+│   │   ├── mage
+│   │   │   ├── data_exporters
+│   │   │   │   ├── data_to_bigquery.py
+│   │   │   │   ├── kaggle_tobucket.py
+│   │   │   │   └── movies_to_bigquery.py
+│   │   │   ├── data_loaders
+│   │   │   │   ├── choose_kaggle_project.py
+│   │   │   │   └── lad_movies_from_gcsbucket.py
+│   │   │   └── pipelines
+│   │   │       └── letterboxd
+│   │   │           └── metadata.yaml
+│   │   ├── pipelines
+│   │   │   └── letterboxd
+│   │   │       └── metadata.yaml
+│   │   └── transformers
+│   │       └── fil_nan_values.py
+│   └── requirements.txt
+└── terraform
+    ├── README
+    ├── entrypoint.sh
+    ├── main.tf
+    └── variables.tf
+
 ## Note:
 This was a very frustrating project and ultimatively I need to do it again with a different dataset as I had many different tables I planned the project around but did not understand the consequences of Nan values.
 I counted it too late to find out that maybe 10% of rows had entire rows unaffected.
