@@ -5,7 +5,7 @@ services:
       context: ./mage/
       dockerfile: Dockerfile
     container_name: mage
-    command: mage start /home/src/mage/${MAGE_PROJECT_NAME}
+    command: mage start /home/src/mage/${PROJECT_NAME}
     env_file:
       - .env
     ports:
