@@ -73,7 +73,7 @@ Letterboxd_data_visualizer/
 │   ├── docker-compose.yml
 │   ├── letterboxd
 │   │   ├── data_exporters
-│   │   │   ├── kaggle_tobucket.py
+│   │   │   ├── kaggle_to_bucket.py
 │   │   │   └── movies_to_bigquery.py
 │   │   ├── data_loaders
 │   │   │   ├── choose_kaggle_project.py
