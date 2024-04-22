@@ -1,6 +1,6 @@
 FROM mageai/mageai:latest
 
-ARG USER_CODE_PATH=/home/src/mage/${PROJECT_NAME}
+ARG USER_CODE_PATH=/home/src/mage/${MAGE_PROJECT_NAME}
 
 # Set working directory
 WORKDIR ${USER_CODE_PATH}
