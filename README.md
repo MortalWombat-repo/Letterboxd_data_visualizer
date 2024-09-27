@@ -77,12 +77,12 @@ Letterboxd_data_visualizer/
 │   │   │   └── movies_to_bigquery.py
 │   │   ├── data_loaders
 │   │   │   ├── choose_kaggle_project.py
-│   │   │   └── lad_movies_from_gcsbucket.py
+│   │   │   └── load_movies_from_gcsbucket.py
 │   │   ├── pipelines
 │   │   │   └── letterboxd
 │   │   │       └── metadata.yaml
 │   │   └── transformers
-│   │       └── fil_nan_values.py
+│   │       └── fill_nan_values.py
 │   └── requirements.txt
 └── terraform
     ├── README
