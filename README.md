@@ -91,11 +91,3 @@ Letterboxd_data_visualizer/
     └── variables.tf
 ```
 
-## Note:
-This was a very frustrating project and ultimatively I need to do it again with a different dataset as I had many different tables I planned the project around but did not understand the consequences of Nan values.
-I counted it too late to find out that maybe 10% of rows had entire rows unaffected.
-I thought about downloading many datasets and substituting values on this dataset but ultimatively that would be pointless as I found out that bigquery does not allow droping columns only creating new tables.
-Had I done that and substituted values I would negate the point of bigquery and i sure wouldn't look good for me wasting the most expensive resource in this project like that.
-
-Who ever takes a deeper dive into it. I'm very sorry many ad-hoc were made and i continue to make this a bit more manageble.
-
